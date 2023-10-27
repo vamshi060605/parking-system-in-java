@@ -17,9 +17,10 @@ This is a Java application for an Interactive Parking System, built using JavaFX
    ```bash
    git clone https://github.com/vamshi060605/parking-system.git
 2. Create a MySQL database named "parkingSystem" using the following SQL script:
-   '''bash
-   CREATE DATABASE IF NOT EXISTS parkingSystem;
 
+   
+   CREATE DATABASE IF NOT EXISTS parkingSystem;
+   '''sql
    USE parkingSystem;
 
    CREATE TABLE IF NOT EXISTS parked_vehicles (
