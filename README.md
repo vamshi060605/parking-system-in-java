@@ -16,3 +16,14 @@ This is a Java application for an Interactive Parking System, built using JavaFX
 
    ```bash
    git clone https://github.com/yourusername/parking-system.git
+
+## Usage
+Launch the application, and you'll be prompted to enter the total number of parking slots.
+
+Once configured, you can park vehicles, remove vehicles, and view parked vehicles using the respective buttons in the application's UI.
+
+The available slots count is dynamically updated as vehicles are parked or removed.
+
+## Contributors
+ 1) vamshi T
+ 2) Harish Sridhar
