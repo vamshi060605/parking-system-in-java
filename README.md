@@ -19,20 +19,19 @@ This is a Java application for an Interactive Parking System, built using JavaFX
 2. Create a MySQL database named "parkingSystem" using the following SQL script:
 
    
-   '''cs
-   CREATE DATABASE IF NOT EXISTS parkingSystem;
+   ```cs
+      CREATE DATABASE IF NOT EXISTS parkingSystem;
 
-USE parkingSystem;
+      USE parkingSystem;
 
-CREATE TABLE IF NOT EXISTS parked_vehicles (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    license_plate TEXT,
-    entry_time TIMESTAMP,
-    exit_time TIMESTAMP
-);
-
-   '''
-
+      CREATE TABLE IF NOT EXISTS parked_vehicles (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          license_plate TEXT,
+          entry_time TIMESTAMP,
+          exit_time TIMESTAMP
+   );
+   
+   ```
 
 ## Usage
 Launch the application, and you'll be prompted to enter the total number of parking slots.
