@@ -28,7 +28,7 @@ This is a Java application for an Interactive Parking System, built using JavaFX
        license_plate TEXT,
        entry_time TIMESTAMP,
        exit_time TIMESTAMP
-   );
+   ); '''
 
 
 ## Usage
