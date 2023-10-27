@@ -32,6 +32,9 @@ This is a Java application for an Interactive Parking System, built using JavaFX
    );
    
    ```
+3. Make sure you have Java and JavaFX installed on your system.
+
+4. Compile and run the application:
 
 ## Usage
 Launch the application, and you'll be prompted to enter the total number of parking slots.
