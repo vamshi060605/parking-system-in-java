@@ -44,5 +44,5 @@ Once configured, you can park vehicles, remove vehicles, and view parked vehicle
 The available slots count is dynamically updated as vehicles are parked or removed.
 
 ## Contributors
-**Vamshi T**
+**Vamshi T** <br>
 **Harish Sridhar**
