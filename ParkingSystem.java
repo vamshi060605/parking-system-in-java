@@ -7,7 +7,6 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.sql.*;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Optional;
@@ -61,9 +60,10 @@ public class ParkingSystem extends Application {
     }
 
     private void initializeDatabase() {
+        String username = System.getenv("DB_USERNAME");
+        String passwd = System.getenv("DB_PASSWD");
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkingSystem", "root",
-                    "Vamshi@0606");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkingSystem", username, passwd);
             Statement statement = connection.createStatement();
             String createTableSQL = "CREATE TABLE IF NOT EXISTS parked_vehicles ("
                     + "id INT AUTO_INCREMENT PRIMARY KEY, " + "license_plate TEXT, " + "entry_time TIMESTAMP, "
