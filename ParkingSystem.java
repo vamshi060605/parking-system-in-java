@@ -62,13 +62,12 @@ public class ParkingSystem extends Application {
 
     private void initializeDatabase() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkingSystem");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkingSystem", "root",
+                    "Vamshi@0606");
             Statement statement = connection.createStatement();
-            String createTableSQL = "CREATE TABLE IF NOT EXISTS parked_vehicles (" +
-                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "license_plate TEXT, " +
-                    "entry_time TIMESTAMP, " +
-                    "exit_time TIMESTAMP)";
+            String createTableSQL = "CREATE TABLE IF NOT EXISTS parked_vehicles ("
+                    + "id INT AUTO_INCREMENT PRIMARY KEY, " + "license_plate TEXT, " + "entry_time TIMESTAMP, "
+                    + "exit_time TIMESTAMP)";
             statement.executeUpdate(createTableSQL);
 
             String selectSQL = "SELECT license_plate, entry_time, exit_time FROM parked_vehicles";
